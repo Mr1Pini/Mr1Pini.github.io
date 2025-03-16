@@ -1,0 +1,80 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* хедер */
+header {
+    background: #4b2816;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ed0d0d;
+    border-radius: 5px;
+}
+
+/* Футер */
+footer {
+    background: #4b2816;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    /* Навігація: вертикальна на малих екранах */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* зображення і текст */
+    .home-text {
+        padding: 10px;
+    }
+
+    .popular-events .event-held {
+        flex-direction: column;
+    }
+
+    .img-home{
+
+    }
+}

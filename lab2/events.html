@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="booking.html">My booking</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <section>
+            <h2>Очікувані події</h2>
+            <div class="events-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p class="footer-text">Orest Klyuk | orest.kliuk.oi.2023@lpnu.ua | veb 2025</p>
+    </footer>
+
+    <!-- Add this part to the body inside the events.html file -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h3>Book Tickets</h3>
+            <form id="booking-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="ticket-quantity">Number of Tickets:</label>
+                <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1" required>
+
+                <p><strong>Total Price: </strong><span id="total-price"></span></p>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/events.js"></script>
+</body>
+</html>

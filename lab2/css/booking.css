@@ -1,0 +1,62 @@
+.content h2 {
+    text-align: center;
+}
+
+/* Стилі для сторінки Мої бронювання */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стилі для кожного заброньованого квитка */
+.booking {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Заголовок для кожного квитка */
+.booking h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стилі для тексту у кожному блоці */
+.booking p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Підкреслення для сильних елементів */
+.booking p strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Для адаптивності на маленьких екранах */
+@media (max-width: 768px) {
+    .booking {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .booking h3 {
+        font-size: 1.4em;
+    }
+
+    .booking p {
+        font-size: 14px;
+    }
+}

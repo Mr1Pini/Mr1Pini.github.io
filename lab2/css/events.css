@@ -1,0 +1,191 @@
+/* сторінка Події */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-content: center; 
+}
+
+.event {
+    background: #ddd;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: span 2; 
+}
+
+.event button {
+    background: #ff0000;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.event button:hover {
+    background: #b10101;
+}
+
+/* Add this to styles.css or events.css */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стилі для заголовку в формі */
+.modal-content h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стилі для заголовку в формі */
+.modal-content h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стилі для форми */
+#booking-form {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок полів форми */
+#booking-form label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Стилі для полів вводу */
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"],
+#booking-form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease;
+}
+
+/* Зміна кольору полів при фокусі */
+#booking-form input[type="text"]:focus,
+#booking-form input[type="email"]:focus,
+#booking-form input[type="tel"]:focus,
+#booking-form input[type="number"]:focus {
+    border-color: #ff0000;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Стилі для тексту ціни */
+#total-price {
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 18px;
+}
+
+/* Стилі для кнопки підтвердження */
+#booking-form button {
+    background-color: #ff0000;
+    color: white;
+    padding: 14px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+/* Зміна кольору кнопки при наведенні */
+#booking-form button:hover {
+    background-color: #b10101;
+}
+
+/* Адаптивність для маленьких екранів */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #booking-form {
+        padding: 15px;
+    }
+
+    #booking-form input[type="text"],
+    #booking-form input[type="email"],
+    #booking-form input[type="tel"],
+    #booking-form input[type="number"] {
+        padding: 10px;
+    }
+
+    #booking-form button {
+        padding: 12px 16px;
+    }
+}
+
+/* Адаптивність: 1 подія в ряд  */
+@media (max-width: 480px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-grid h2 {
+        grid-column: span 1; 
+    }
+}
